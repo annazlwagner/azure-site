@@ -11,28 +11,31 @@ html, body {
 }
 
 body {
-  font: 14px/1 'Open Sans', sans-serif;
-  color: #555;
-  background: #eee;
+  font: 16px/1 'Open Sans', sans-serif; /*text size inside the box*/
+  color: rgb(64, 99, 225); /*color of txt inside box*/
+  background: url('pastelClouds.png');
+  background-size: 100% 100%; /*cover the whole screen*/
 }
 
 h1 {
   padding: 50px 0;
-  font-weight: 400;
+  font-weight: 400; /*how bold the title/h1 font is*/
+  font-size: 55px; /*size of title/h1*/
   text-align: center;
+  color: rgb(70, 109, 253); /*color, matching the border top of the tabs*/
 }
 
 p {
   margin: 0 0 20px;
-  line-height: 1.5;
+  line-height: 2.5;/*space in between the text lines*/
 }
 
 main {
   min-width: 320px;
   max-width: 800px;
-  padding: 50px;
+  padding: 50px; /*how close the words are from the edge of the box*/
   margin: 0 auto;
-  background: #fff;
+  background: hsl(180, 20%, 99%);/*color of the box inside the clouds*/
 }
 
 section {
@@ -51,7 +54,7 @@ label {
   padding: 15px 25px;
   font-weight: 600;
   text-align: center;
-  color: #bbb;
+  color: rgb(133, 144, 243); /*The tabs not being used*/
   border: 1px solid transparent;
 }
 
@@ -67,26 +70,41 @@ label:before {
 /*'\f1be'; soundcloud*/
 /*'\f20a'; cloud*/
 /*'\f004'; heart*/
-/*'\f12b'; :0*/
+/*'\f17d'; bball*/
+/*'\f032'; B*/
+/*'\f06c'; leaf*/
+/*'\f091'; trophy/award*/
+/*f0b2; arrows going 4 ways*/
+/*lightbulb: f0eb*/
+/*'\f1bb'; /*tree*/
+/* f0e7; lightning bolt*/
+/* f135; rocket*/
+/* f13d; anchor*/
+/* f164; thumbs up*/
+/* f25b; peace*/
+/* f135; rocket*/
+/* f135; rocket*/
+/* f135; rocket*/
+/*https://www.fontawesomecheatsheet.com/*/
 
 label[for*='1']:before {
-  content: '\f184'; /*heart*/
+  content: '\f004'; /*heart*/
 }
 
 label[for*='2']:before {
-  content: '\f14a';
-} /*lightbulb: f0eb*/
+  content: '\f164'; /* f164; thumbs up*/
+} 
 
 label[for*='3']:before {
-  content: '\f1aa';/*abstract*/
+  content: '\f135';/*rocket*/
 }
 
 label[for*='4']:before {
-  content: '\f197'; /*airplane*/
+  content: '\f005'; /*star*/
 }
 
 label[for*='5']:before {
-  content: '\f17d'; /*bball*/
+  content: '\f091'; /*'\f091'; trophy/award*/
 }
 
 label[for*='6']:before {
@@ -94,15 +112,15 @@ label[for*='6']:before {
 }
 
 label:hover {
-  color: #888;
+  color: rgb(255, 143, 242);/*when cursor is hovering over a tab*/
   cursor: pointer;
 }
 
 input:checked + label {
-  color: rgb(17, 79, 203); /*color of tab font when it's in use*/
-  border: 1px solid #ddd;
-  border-top: 2px solid rgb(47, 91, 250); /*color of top of tab that's in use*/
-  border-bottom: 1px solid #fff;
+  color: rgb(70, 109, 253); /*color of tab font when it's in use*/
+  border: 1px solid rgb(221, 221, 221);
+  border-top: 2px solid rgb(70, 109, 253); /*color of top of tab that's in use*/
+  border-bottom: 1px solid hsl(180, 20%, 99%); /*made this the same color as the box inside the clouds*/
 }
 
 #tab1:checked ~ #content1,
