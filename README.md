@@ -1,2 +1,2 @@
 # azure-site
-Testing my html &amp; css while software request pending
+My own html &amp; css instead of GPS's resume template
