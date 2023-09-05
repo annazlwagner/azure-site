@@ -1,0 +1,8 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "AzureSiteConnectionString": "AccountEndpoint=https://capstone.documents.azure.com:443/;AccountKey=WDDJEfdHggIKbSFHzxZrGT4QIAXqAX7j4FTS7qBPLBGqw577Oq0isx1Jca1FqrdHixDmbsdhs3UVACDbwGopIw==;"
+  }
+}
