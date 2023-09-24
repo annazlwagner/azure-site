@@ -48,8 +48,8 @@ namespace Company.Function
 
             return new HttpResponseMessage(System.Net.HttpStatusCode.OK)
             {
-                Content = new StringContent(jsonToReturn, Encoding, "application/json")
-            };
+                Content = new StringContent(jsonToReturn, Encoding.UTF8, "application/json")
+            }; //gps did "jsonToRetun" missing the 'r'. I spelled it correctly above.
         }
     }
 }
