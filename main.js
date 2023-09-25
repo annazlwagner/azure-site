@@ -6,7 +6,8 @@ window.addEventListener('DOMContentLoaded', (event) =>{
 // declare a constant:
 //within the '', we put the URL to the API. We'll have tht 
 //later when we implement the API via an Azure function
-const functionApi = '';
+const functionApi = 'http://localhost:7071/api/GetCounter';
+//^^^added the url from running the function in api folder (func host start)
 
 //this code will grab the JSON that is provided from that API -
 //grabbing the correct part of tht JSON & showing it in our HTML
