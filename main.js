@@ -3,8 +3,9 @@ window.addEventListener('DOMContentLoaded', (event) =>{
     getVisitCount();
 }) //when the content is loaded, go & run this event - getVisitCount
 
-const functionApiUrl = 'https://getannasitecounter.azurewebsites.net'
-//^this the url from the function app, function in Azure portal. currently unsure about this link^
+const functionApiUrl = 'https://getannasitecounter.azurewebsites.net/api/GetCounter?code=4nwjAzhPAidzQn0Vkoq7ZvniwVC_K7NEK4-zEj4UStR1AzFuVmnFrQ== '
+//^this the url from the function app, function in Azure portal. ^
+//^this is the PRODUCTION URL (url from function)
 
 // declare a constant:
 //within the '', we put the URL to the API. We'll have tht 
